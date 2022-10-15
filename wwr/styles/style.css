@@ -1,34 +1,43 @@
-#content { 
-    max-width: 1600px;
-    margin: 0 auto;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Karla:wght@200&family=Montserrat:wght@100&display=swap');
+
 
 body {
     background-color: whitesmoke;
+    font-family: Karla, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-   background-color: #020887;
-   margin: auto;
-}
-
-nav {
-    margin: auto;
-}
-
-nav a {
+.book, .join {
     background-color: #020887;
     color: white;
     text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
-nav a:hover {
+.book:hover, .join:hover {
     background-color: #647AA3;
     color: white;
 }
 
-.logo {
-    width: 80px;
+#background {
+    background-color: #647AA3;
+    height: 725px;
+    margin-bottom: 100px;
+}
+
+.button-box {
+    text-align: center;
+}
+
+.card-img {
+    border: 10px solid #95B2B0;
 }
 
 .center {
@@ -36,46 +45,24 @@ nav a:hover {
     padding: 30px 0;
 }
 
-.book {
-    background-color: whitesmoke;
-    color: #020887;
-    text-decoration: none;
-}
-
-.join {
-    background-color: #95B2B0;
-    text-decoration: none;
-}
-
-.book:hover, .join:hover {
-    background-color: white;
-    color: black;
-}
-
-#background {
-    background-color: #647AA3;
-    height: 725px;
-}
-
-.msg {
-    background-color: #95B2B0;
-}
-
-.msg h2 {
-    color: white;
-}
-.msg p {
-    color: white;
+content { 
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 footer {
     background-color: #647AA3;
     color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
     color: white;
     text-decoration: none;
+    margin-top: 200px;
 }
 
 footer a:hover {
@@ -90,26 +77,115 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
+header {
+   background-color: #020887;
+   margin: auto;
+   font-family: 'Amatic SC', cursive;
+}
+
+#hero-img {
+    width: 100%
+}
+
 #hero-msg h1 {
     text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 64px;
 }
 
 #hero-msg h4 {
     text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 28px;
 }
 
-.button-box {
-    text-align: center;
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 48px;
+    margin: 0;
+}
+
+.home-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.logo {
+    width: 80px;
+    padding: 20px;
 }
 
 main section {
     text-align: center;
 }
 
-.icon {
-    width: 80px;
+main section img {
+    box-sizing: border-box;
 }
 
-#hero-img {
-    width: 100%
+.msg {
+    background-color: #95B2B0;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg h2 {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 64px;
+}
+
+.msg p {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.mountains {
+    padding-bottom: 150px;
+}
+
+nav {
+    margin: auto;
+}
+
+nav a {
+    background-color: #020887;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav a:hover {
+    background-color: #647AA3;
+    color: white;
+}
+
+p {
+    font-family: Karla, sans-serif;
+    font-size: 48px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+section {
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
 }

@@ -1,0 +1,35 @@
+#content { 
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: gray;
+    margin: 0 auto;
+}
+
+header {
+   max-width: 1600px;
+   background-color: #020887;
+   margin: auto;
+}
+
+#image_circle_1 {
+    border-radius: 50%;
+    max-width: 250px;
+    border: 15px solid rgb(56, 55, 55);
+   
+}
+
+#image_circle_2 {
+    border-radius: 50%;
+    max-width: 250px;
+    border: 15px solid rgb(56, 55, 55);
+
+}
+#image_circle_3 {
+    border-radius: 50%;
+    max-width: 250px;
+    border: 15px solid rgb(56, 55, 55);
+
+}
