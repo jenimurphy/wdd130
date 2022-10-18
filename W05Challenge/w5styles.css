@@ -3,6 +3,8 @@
     margin: 0 auto;
 }
 
+
+
 body {
     background-color: gray;
     margin: 0 auto;
@@ -10,26 +12,34 @@ body {
 
 header {
    max-width: 1600px;
-   background-color: #020887;
-   margin: auto;
+   margin: 0 auto;
+}
+
+header img {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+#circles img {
+    flex-box;
 }
 
 #image_circle_1 {
     border-radius: 50%;
     max-width: 250px;
     border: 15px solid rgb(56, 55, 55);
-   
+    margin-top: 25px;   
 }
 
 #image_circle_2 {
     border-radius: 50%;
     max-width: 250px;
     border: 15px solid rgb(56, 55, 55);
-
 }
+
 #image_circle_3 {
     border-radius: 50%;
     max-width: 250px;
     border: 15px solid rgb(56, 55, 55);
-
 }
