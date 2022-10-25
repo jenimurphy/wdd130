@@ -1,1 +1,10 @@
 /* CSS - Name: "W6css.css" */
+
+.challenge {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+#title {
+    font-size: 84px;
+}
