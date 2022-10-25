@@ -218,7 +218,6 @@ main section img {
 nav {
     display: flex;
     justify-content: space-around;
-    margin: auto;
 }
 
 nav a {
