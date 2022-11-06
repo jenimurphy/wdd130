@@ -246,6 +246,11 @@ p {
     grid-row: 2/3;
 }
 
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
 section {
     font-family: 'Karla', Arial, sans-serif;
     font-size: 22px;
@@ -256,6 +261,11 @@ section {
         display: block;
         height: auto;
     }
+    .card-idaho, .card-utah, .card-arizona { 
+        margin: 50px auto;
+        width: 60%;
+    }
+
     nav, footer {
         flex-direction: column;
     }
