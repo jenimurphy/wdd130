@@ -55,6 +55,22 @@ body {
     grid-column: 5/7;
     grid-row: 2/3;
 } 
+
+.card-arizona {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.card-idaho {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.card-utah { 
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
 .center {
     margin: auto;
     padding: 30px 0;
@@ -62,7 +78,7 @@ body {
 
 content { 
     max-width: 1600px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 footer {
@@ -149,7 +165,13 @@ h2 {
     font-family: 'Amatic SC', Arial, cursive;
     font-size: 48px;
     margin: 0;
-}
+ }
+
+ h4 {
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 25px;
+ }
 
 .home-grid {
     display: grid;
@@ -176,6 +198,10 @@ h2 {
 .logo {
     width: 80px;
     padding: 20px;
+}
+
+main {
+    display: block;
 }
 
 main section {
@@ -241,20 +267,85 @@ p {
     grid-column: 8/10;
     grid-row: 2/3;
 }
+
 .rivers-card  {
     grid-column: 2/4;
     grid-row: 2/3;
-}
-
-.rivers-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
 }
 
 section {
     font-family: 'Karla', Arial, sans-serif;
     font-size: 22px;
 }
+
+/*--------RIVERS SUB-PAGE--------------------*/
+.rivers-card-img {
+    border: 10px solid #95B2B0; 
+    width: auto;
+    box-shadow: 5px 5px 10px #6f7364;
+    place-items: center;
+}
+
+.rivers_content {
+    font-size: 18px;
+    text-align: left;
+}
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 25px;
+}
+.rivers_arizona {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+}
+.rivers_idaho {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+}
+.rivers_utah {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
+.river_top_3 {
+    margin: 25px;
+    padding: 30px;
+}
+
+.river_level {
+    margin: 25px;
+    padding: 30px;
+}
+
+
+
+/*--------CONTACT US SUB-PAGE--------------------*/
+.rivers_contact_us {
+    font-size: 24px;
+    text-align: center;
+}
+.contact_us_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+ .river_titles {
+    font-family: 'Amatic SC', Arial, cursive;
+    font-size: 48px;
+    text-align: center;
+    margin-left: 25px;
+    }
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
