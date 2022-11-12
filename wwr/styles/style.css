@@ -281,7 +281,9 @@ section {
 /*--------RIVERS SUB-PAGE--------------------*/
 .rivers-card-img {
     border: 10px solid #95B2B0; 
-    width: auto;
+    height: auto;
+    width: 100%;
+    max-width: 577px;
     box-shadow: 5px 5px 10px #6f7364;
     place-items: center;
 }
@@ -301,7 +303,8 @@ section {
 .rivers_arizona {
     grid-column: 1/2;
     grid-row: 1/2;
-    display: flex;
+    /*display: flex;*/
+    padding-top: 60%;
     justify-content: center;
 }
 .rivers_idaho {
