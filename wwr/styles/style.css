@@ -281,7 +281,7 @@ section {
 /*--------RIVERS SUB-PAGE--------------------*/
 .rivers-card-img {
     border: 10px solid #95B2B0; 
-    height: auto;
+    /*height: auto; */
     width: 100%;
     /*max-width: 577px;*/
     box-shadow: 5px 5px 10px #6f7364;
