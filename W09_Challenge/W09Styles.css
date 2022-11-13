@@ -1,0 +1,79 @@
+
+body{   
+  border-radius: 25px;
+  background-color: black;
+  margin: 50px 50px;
+  width: 300px;
+  align-self: center;
+    }
+  
+    h1 {
+      color: black;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    h2 {
+        color: black;
+        text-align: center;
+        font-size: 1.5em  
+    }
+    h3 {
+      color: rgb(52, 49, 49);
+      text-align: center;
+      font-size: 14px;
+      
+    }
+    .img_city {
+      width: 100%;
+      border-radius: 15px 15px 5px 5px;
+    }
+
+    p {
+      background-color: white;
+      text-align: center;
+      color black;
+    }
+    nav {
+      color: white;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 15px;
+    }
+
+.analytics_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 75px;
+  row-gap: 5px;
+  background-color: rgb(36, 36, 120);
+  border-radius: 1px 1px 15px 15px;
+}
+
+.analytics_read {
+  grid-column 1/2;
+  text-align: center;
+  color: white;
+  display: flex;
+  margin: auto;
+  
+}
+
+.analytics_views {
+  grid-column: 2/3;
+  text-align: center;
+  color: white;
+  display: flex;
+  margin: auto;
+}
+.analytics_comments {
+  grid-column: 3/4;
+  text-align: center;
+  color: white;
+  display: flex;
+  margin: auto;
+}
