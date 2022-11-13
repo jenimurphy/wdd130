@@ -283,7 +283,7 @@ section {
     border: 10px solid #95B2B0; 
     height: auto;
     width: 100%;
-    max-width: 577px;
+    /*max-width: 577px;*/
     box-shadow: 5px 5px 10px #6f7364;
     place-items: center;
 }
@@ -303,20 +303,16 @@ section {
 .rivers_arizona {
     grid-column: 1/2;
     grid-row: 1/2;
-    /*display: flex;*/
-    padding-top: 60%;
     justify-content: center;
 }
 .rivers_idaho {
     grid-column: 1/2;
     grid-row: 2/3;
-    display: flex;
     justify-content: center;
 }
 .rivers_utah {
     grid-column: 1/2;
     grid-row: 3/4;
-    display: flex;
     justify-content: center;
 }
 
