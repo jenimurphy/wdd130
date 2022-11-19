@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Karla:wght@300&family=Montserrat:wght@200&display=swap');
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #048040;
+    margin: auto;
+    font-family: 'Amatic SC', Arial, cursive;
+ }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    background-color:#048040;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav a:hover {
+    background-color: #00224c;
+    color: white;
+}
