@@ -1,13 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Karla:wght@300&family=Montserrat:wght@200&display=swap');
 
+
+content { 
+    max-width: 1600px;
+    margin: auto;
+}
+
 header {
     display: grid;
     grid-template-columns: 150px auto;
     background-color: #048040;
     margin: auto;
-    font-family: 'Amatic SC', Arial, cursive;
+    font-family: 'Karla', 'Arial', sans-serif;
  }
 
+ footer {
+    background-color: #00224c;
+    color: white;
+    font-family: 'Karla', 'Arial', sans-serif;
+    font-size: 14px;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.assignment-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.calendar-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.card-image {
+        border: 10px solid #95B2B0; 
+        width: 100%;
+        transition: transform .5s;
+        box-shadow: 5px 5px 10px #6f7364;
+}
+
+.link-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 400px 400px 400px;
+}
+
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
 nav {
     display: flex;
     justify-content: space-around;
