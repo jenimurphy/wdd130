@@ -1,23 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Karla:wght@300&family=Montserrat:wght@200&display=swap');
 
+.assignment-card { 
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: center;
+    color: #00224c;
+}
+.assignment-card-content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    
+}
+.calendar-card {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-items: center;
+    color: #00224c;
+}
+.calendars-card-content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+}
 
 content { 
     max-width: 1600px;
     margin: auto;
 }
-
-header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    background-color: #048040;
-    margin: auto;
-    font-family: 'Karla', 'Arial', sans-serif;
- }
-
- footer {
+footer {
     background-color: #00224c;
     color: white;
-    font-family: 'Karla', 'Arial', sans-serif;
+    font-family: 'Fuzzy Bubbles', cursive;
     font-size: 14px;
     padding: 25px 50px;
     margin-top: 200px;
@@ -25,34 +41,50 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-.assignment-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
-.calendar-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
+header {
+    display: grid;
+    grid-template-columns: 450px auto;
+    align-items: center;
+    background-color: #048040;
+    margin: auto;
+    font-family: 'Fuzzy Bubbles', cursive;
+ }
+ h1 {
+    color: #00224c;
+    font-size: 36px;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 
-.card-image {
-        border: 10px solid #95B2B0; 
-        width: 100%;
-        transition: transform .5s;
-        box-shadow: 5px 5px 10px #6f7364;
+h2 {
+    font-size: 28px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #00224c;
 }
-
-.link-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
-}
-
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr 400px;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 225px 225px 225px;
+    padding: 25px;
+    justify-content: center;
+    margin-left: 150px;
 }
-
+.link-card {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-items: center;
+    color: #00224c;
+}
+.link-card-content {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-content: start;
+    font-family: 'Karla', sans-serif;
+}
 
 #logo_link {
     padding-top: 5px;
@@ -61,17 +93,28 @@ header {
 }
 nav {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    height: 200px;
 }
 
 nav a {
     background-color:#048040;
+    text-align: center;
+    font-size: 10px;
     color: white;
     text-decoration: none;
-    padding: 30px;
+    padding: 50px;
 }
 
 nav a:hover {
-    background-color: #00224c;
+    background-color: #cbcbcc;
     color: white;
 }
+p {
+    font-family: 'Karla', sans-serif;
+}
+
+.welcome {
+    text-align: center;
+}
+
