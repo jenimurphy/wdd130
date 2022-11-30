@@ -11,7 +11,10 @@
     grid-row: 1/2;
     justify-content: center;
     font-family: 'Karla', sans-serif;
-    
+}
+body {
+    margin: 15px;
+    padding: 0;
 }
 .calendar-card {
     grid-column: 1/2;
@@ -25,9 +28,8 @@
     justify-content: center;
     font-family: 'Karla', sans-serif;
 }
-
 content { 
-    max-width: 1600px;
+    max-width: 960px;
     margin: auto;
 }
 footer {
@@ -43,20 +45,19 @@ footer {
 }
 footer a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 header {
     display: grid;
     grid-template-columns: 450px auto;
-    align-items: center;
     background-color: #048040;
-    margin: auto;
     font-family: 'Fuzzy Bubbles', cursive;
  }
  h1 {
     color: #00224c;
     font-size: 36px;
+    text-align: center;
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
@@ -64,14 +65,15 @@ h2 {
     font-size: 28px;
     font-family: 'Fuzzy Bubbles', cursive;
     color: #00224c;
+    padding: 0;
 }
 .home-grid {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 225px 225px 225px;
-    padding: 25px;
+    grid-template-rows: 235px 235px 235px;
+    padding: 50px;
     justify-content: center;
-    margin-left: 150px;
+    margin: auto;
 }
 .link-card {
     grid-column: 1/2;
@@ -85,22 +87,27 @@ h2 {
     justify-content: start;
     font-family: 'Karla', sans-serif;
 }
+.logo{
+    width: 100%;
+}
 
 #logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
+main {
+    margin: auto;
+}
 nav {
     display: flex;
-    align-items: center;
-    height: 200px;
+    justify-content: space-around;
 }
 
 nav a {
     background-color:#048040;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     color: white;
     text-decoration: none;
     padding: 50px;
@@ -112,9 +119,119 @@ nav a:hover {
 }
 p {
     font-family: 'Karla', sans-serif;
+    font-size: 18px;
 }
 
 .welcome {
-    text-align: center;
+    display: block;
+    margin: 15px;
 }
+/* -----------QUOTES SLIDESHOW----------- */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
 
+
+
+@media screen and (max-width: 900px) {
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+    .assignment-card, .calendar-card, .link-card { 
+        margin: 50px auto;
+        width: 60%;
+        }
+
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    .welcome {
+        font-size: 25px;
+    }
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+          

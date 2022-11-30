@@ -14,10 +14,10 @@
             <img class="logo" src="images/HaydenPeakHeaderLogoNEW.png"  alt="Hayden Peak Chalkboard">
         </a>
         <nav>
-            <a href="index.html"><img src="images/rsz_home_nav_icon.png" alt="Home page icon">HOME</a>
-            <a href="assignments.html"><img src="images/rsz_clipboard_nav_icon.png" alt="Assignments page icon">ASSIGNMENTS</a>
-            <a href="calendars.html"><img src="images/rsz_calendar_nav_icon.png" alt="Calenars page icon">CALENDARS</a>
-            <a href="links.html"><img src="images/rsz_link_nav_icon.png" alt="Links page icon">LINKS</a> 
+            <a href="index.html"><img src="images/rsz_home_nav_icon.png" alt="Home page icon"><br>HOME</a>
+            <a href="assignments.html"><img src="images/rsz_clipboard_nav_icon.png" alt="Assignments page icon"><br>ASSIGNMENTS</a>
+            <a href="calendars.html"><img src="images/rsz_calendar_nav_icon.png" alt="Calenars page icon"><br>CALENDARS</a>
+            <a href="links.html"><img src="images/rsz_link_nav_icon.png" alt="Links page icon"><br>LINKS</a> 
         </nav>
     </header>
     <div>
@@ -29,7 +29,7 @@
     </div>
     <main class="home-grid"> 
         <div class="assignment-card">  
-                <img src="images/rsz_clipboard.png" alt="Assignments">
+            <a href="assignments.html"><img src="images/rsz_clipboard.png" alt="Assignments"></a>
         </div>
             <div class="assignment-card-content">
                 <h2><a href="assignments.html">ASSIGNMENTS</a></h2>
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
         <div class="calendar-card">
-            <img src="images/rsz_calendar.png" alt="Calendars Page">
+            <a href="calendars.html"><img src="images/rsz_calendar.png" alt="Calendars Page"></a>
         </div>
             <div class="calendars-card-content">
                 <h2><a href="calendars.html">CALENDARS</a></h2>
@@ -54,7 +54,7 @@
                     </ul>
                 </div>
         <div class="link-card">
-            <img src="images/rsz_link.png" alt="Links Page">
+            <a href="links.html"><img src="images/rsz_link.png" alt="Links Page"></a>
         </div>
             <div class="link-card-content">
                 <h2><a href="links.html">LINKS</a></h2>
@@ -64,20 +64,78 @@
                 <li>Important links that came in email</li>
                 </ul>
             </div>
-    </main>
-    <footer>
-            <p>Hayden Peak Chalkboard &copy; 2022 - Jeniffer Murphy</p>
-            <a href="site-plan.html" target="_blank">Site Plan</a>
+            </main>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/icons8-facebook-48.png" alt="fb icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/icons8-instagram-48.png" alt="instagram icon">
-            </a>
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+            <q>Teaching is the profession that teaches all the other professions</q>
+            <p class="author">- Unknown</p>
+            </div>
+        
+            <div class="mySlides">
+            <q>It's the teacher that makes the difference, not the classroom.</q>
+            <p class="author">- Michael Morpurgo</p>
+            </div>
+        
+            <div class="mySlides">
+            <q>A good teacher can inspire hope, ignite the imagination, and instill a love of learning.</q>
+            <p class="author">- Brad Henry</p>
+            </div>
+        
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    <footer>
+                    <p>Hayden Peak Chalkboard &copy; 2022 - Jeniffer Murphy</p>
+                    <a href="site-plan.html" target="_blank">Site Plan</a>
+
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/icons8-facebook-48.png" alt="fb icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/icons8-instagram-48.png" alt="instagram icon">
+                    </a>
+                </div>
     </footer>
 </div>
-</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body> 
 </html>
