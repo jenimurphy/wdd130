@@ -19,8 +19,9 @@ body {
 .calendar-card {
     grid-column: 1/2;
     grid-row: 2/3;
-    justify-items: center;
     color: #00224c;
+    justify-items: center;
+
 }
 .calendars-card-content {
     grid-column: 2/3;
@@ -38,7 +39,7 @@ footer {
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: 14px;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -72,9 +73,11 @@ h2 {
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 235px 235px 235px;
-    padding: 50px;
-    justify-content: center;
-    margin: auto;
+    padding: 15px;
+    margin-left: 95px;
+    margin-right: 95px;
+    font-size: 20px;
+    row-gap: 45px;
 }
 .link-card {
     grid-column: 1/2;
@@ -99,6 +102,7 @@ h2 {
 }
 main {
     margin: auto;
+
 }
 nav {
     display: flex;
@@ -123,9 +127,11 @@ p {
     font-size: 18px;
 }
 
-.welcome {
+.welcome p {
     display: block;
-    margin: 15px;
+    margin-left: 95px;
+    margin-right: 95px;
+    font-size: 24px;
 }
 /* -----------QUOTES SLIDESHOW----------- */
 * {box-sizing: border-box}
@@ -134,15 +140,15 @@ body {font-family: Verdana, sans-serif; margin:0}
 .slideshow-container {
     position: relative;
     background: #f1f1f1f1;
-    height: 200px;
-    margin-left: 15px;
-    margin-right: 15px;
+    height: 150px;
+    margin-left:95px;
+    margin-right: 95px;
   }
   
   /* Slides */
   .mySlides {
     display: none;
-    padding: 80px;
+    padding: 60px;
     text-align: center;
   }
   
@@ -179,8 +185,8 @@ body {font-family: Verdana, sans-serif; margin:0}
     text-align: center;
     padding: 20px;
     background: #ddd;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 95px;
+    margin-right: 95px;
   }
   
   /* The dots/bullets/indicators */
