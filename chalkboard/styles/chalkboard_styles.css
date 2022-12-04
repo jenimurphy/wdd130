@@ -164,11 +164,16 @@ p {
 .assignment-faculty {
     grid-row: 1/2;
 }
+
 .assignment-outside {
     grid-row: 2/3;
 }
+
 .assignment-soup {
     grid-row: 3/4;
+}
+.assignment-soup #h1 {
+    text-align: center;
 }
 .assignment-PDF-Docs {
     margin-left: 95px;
@@ -197,7 +202,6 @@ p {
 .school_img {
     margin: 65px;
     text-align: center;
-    
 }
 
 /* -----------QUOTES SLIDESHOW----------- */
@@ -278,7 +282,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   
   /* Add a blue color to the author */
   .author {color: cornflowerblue;}
-
 
 
 @media screen and (max-width: 900px) {
