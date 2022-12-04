@@ -12,6 +12,7 @@
     justify-content: center;
     font-family: 'Karla', sans-serif;
 }
+
 body {
     margin: 25px;
     padding: 0;
@@ -102,7 +103,6 @@ h2 {
 }
 main {
     margin: auto;
-
 }
 nav {
     display: flex;
@@ -122,9 +122,13 @@ nav a:hover {
     background-color: #cbcbcc;
     color: white;
 }
+
 p {
     font-family: 'Karla', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
+}
+.welcome {
+    text-align: start;
 }
 
 .welcome p {
@@ -133,6 +137,68 @@ p {
     margin-right: 95px;
     font-size: 24px;
 }
+.welcome ul {
+    display: block;
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+/* -----------SUB-PAGE: ASSIGNMENTS----------- */
+.assignment-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 800px);
+    padding: 15px;
+    margin-left: 95px;
+    margin-right: 95px;
+    font-size: 20px;
+    row-gap: 25px;
+}  
+.assignment-icon {
+    grid-row: 1/2;
+    grid-column: 1/2;
+} 
+
+.assignment-faculty {
+    grid-row: 1/2;
+}
+.assignment-outside {
+    grid-row: 2/3;
+}
+.assignment-soup {
+    grid-row: 3/4;
+}
+.assignment-PDF-Docs {
+    margin-left: 95px;
+    margin-right: 95px;
+}
+.welcome-info { 
+    display: flex;
+    margin-left: 95px;
+    margin-right: 95px;
+    vertical-align: middle;
+    justify-content: center; 
+} 
+
+.welcome-info img{
+    margin-left: 95px; 
+    vertical-align: center; 
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 256px;
+    max-height: 256px;
+}
+/* -----------SUB-PAGE: LINKS----------- */
+.links_page {
+    margin-left: 95px;
+    margin-right: 95px;
+}
+.school_img {
+    margin: 65px;
+    text-align: center;
+    
+}
+
 /* -----------QUOTES SLIDESHOW----------- */
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -219,6 +285,10 @@ body {font-family: Verdana, sans-serif; margin:0}
         display: block;
         height: auto;
     }
+    .assignment-grid {
+        display: block;
+        height: auto;
+    }
     .assignment-card, .calendar-card, .link-card { 
         margin: 50px auto;
         width: 60%;
@@ -232,13 +302,17 @@ body {font-family: Verdana, sans-serif; margin:0}
         padding: 15px;
     }
     .welcome {
-        font-size: 25px;
+        font-size: 20px;
     }
     #background {
         display: none;
     }
     footer {
         margin-top: 25px;
+    }
+    .school_img {
+        width: 50%;
+        margin: 0 auto;
     }
 }
           
