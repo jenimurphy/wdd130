@@ -70,6 +70,9 @@ h2 {
     color: #00224c;
     padding: 0;
 }
+h3 {
+    text-align: center;
+}
 .home-grid {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -181,10 +184,8 @@ p {
 
 .welcome-info img{
     margin-left: 95px; 
-    vertical-align: center; 
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    vertical-align: top; 
+    padding: 10px;
     max-width: 256px;
     max-height: 256px;
 }
