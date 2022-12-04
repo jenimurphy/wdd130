@@ -321,6 +321,7 @@ body {font-family: Verdana, sans-serif; margin:0}
     .assignment-grid {
         display: block;
         height: auto;
+        margin: auto;
     }
     .assignment-card-content, .calendars-card-content, .link-card-content a {
         display: block;
@@ -329,6 +330,13 @@ body {font-family: Verdana, sans-serif; margin:0}
     .assignment-card-content, .calendars-card-content, .link-card-content h2 { 
         display: block;
         font-size: 20px;
+    }
+    .assignment-grid h1 {
+        font-size: 20px;
+    }
+    .iframe-google-doc, .assignment-faculty, .assignment-crossing, .assignment-soup, .assignment-PDF-Docs h1 {
+        display: block;
+        font-size: 18px;
     }
     .logo{
         width: 50%;
@@ -363,6 +371,33 @@ body {font-family: Verdana, sans-serif; margin:0}
         display: block;
         font-size: 18px;
     }
+    .welcome-info {
+        display: block;
+        align-items: left;
+        margin: 10px;
+        padding: 0;
+    }
+    .welcome-info h1 {
+        font-size: 18px;
+    }
+    .welcome-info span {
+        width: 75%;
+    }
+    .welcome-info img{
+        width: 50%;
+    }
+    .assignment-info h1 {
+        font-size: 24px;
+    }
+    .assignment-info h2 {
+        font-size: 18px;
+    }
+    .assignment-info h3 {
+        font-size: 18px;
+    }
+    .assignment-info ul {
+        font-size: 18px;
+    }
     #background {
         display: none;
     }
@@ -386,6 +421,14 @@ body {font-family: Verdana, sans-serif; margin:0}
    }
    .dot-container{
         height: 50%;
+   }
+   .iframe-google-doc {
+        width: auto;
+        height: 350px;
+   }
+    iframe {
+        width: auto;
+        height: 350px;
    }
 }
           
