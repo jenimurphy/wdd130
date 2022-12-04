@@ -215,10 +215,23 @@ iframe {
     margin-left: 95px;
     margin-right: 95px;
 }
+.links_page,  .school-links, .district-links {
+    margin-left: 185px;
+    margin-right: 185px;
+}
 .school_img {
-    margin: 65px;
+    /*margin: 65px;*/
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    margin: 0 auto;
     text-align: center;
 }
+.links-title h1 {
+    text-align: left;
+}
+
 
 /* -----------QUOTES SLIDESHOW----------- */
 * {box-sizing: border-box}
