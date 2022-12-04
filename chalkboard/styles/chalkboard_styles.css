@@ -322,30 +322,70 @@ body {font-family: Verdana, sans-serif; margin:0}
         display: block;
         height: auto;
     }
-    .assignment-card, .calendar-card, .link-card { 
-        margin: 50px auto;
-        width: 60%;
-        }
-
+    .assignment-card-content, .calendars-card-content, .link-card-content a {
+        display: block;
+        font-size: 24px;
+    }
+    .assignment-card-content, .calendars-card-content, .link-card-content h2 { 
+        display: block;
+        font-size: 20px;
+    }
+    .logo{
+        width: 50%;
+    }
     nav, footer {
         flex-direction: column;
     }
     nav a {
         display: block;
-        padding: 15px;
+        padding: 10px;
+    }
+    header{
+        display: block;
+        height: auto:
+    }
+    #logo_link {
+        width: auto;
     }
     .welcome {
-        font-size: 20px;
+        display: block;
+        font-size: 20px;  
+    }
+    .welcome p {
+        display: block;
+        font-size: 18px;
+    }
+    .welcome h1 {
+        display: block;
+        font-size: 24px;
+    }
+    .welcome ul {
+        display: block;
+        font-size: 18px;
     }
     #background {
         display: none;
     }
-    footer {
+    footer p{
         margin-top: 25px;
+        font-size: 18px;
     }
     .school_img {
-        width: 50%;
+        width: 65%;
         margin: 0 auto;
     }
+    .slideshow-container {
+        height: 50%;
+    }
+   .mySlides q {
+        display: block;
+        font-size: 18px;
+   }
+   .mySlides p {
+        font-size: 18px;
+   }
+   .dot-container{
+        height: 50%;
+   }
 }
           
