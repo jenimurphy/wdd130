@@ -215,7 +215,7 @@ iframe {
     margin-left: 95px;
     margin-right: 95px;
 }
-.links_page,  .school-links, .district-links {
+.links_page, .school-links, .district-links {
     margin-left: 185px;
     margin-right: 185px;
 }
@@ -231,7 +231,6 @@ iframe {
 .links-title h1 {
     text-align: left;
 }
-
 
 /* -----------QUOTES SLIDESHOW----------- */
 * {box-sizing: border-box}
@@ -329,14 +328,14 @@ body {font-family: Verdana, sans-serif; margin:0}
     }
     .assignment-card-content, .calendars-card-content, .link-card-content h2 { 
         display: block;
-        font-size: 20px;
+        font-size: 18px;
     }
     .assignment-grid h1 {
         font-size: 20px;
     }
     .iframe-google-doc, .assignment-faculty, .assignment-crossing, .assignment-soup, .assignment-PDF-Docs h1 {
         display: block;
-        font-size: 18px;
+        font-size: 20px;
     }
     .logo{
         width: 50%;
@@ -357,7 +356,9 @@ body {font-family: Verdana, sans-serif; margin:0}
     }
     .welcome {
         display: block;
-        font-size: 20px;  
+        font-size: 20px;
+        margin: 10px;
+        padding: 0; 
     }
     .welcome p {
         display: block;
@@ -373,7 +374,11 @@ body {font-family: Verdana, sans-serif; margin:0}
     }
     .welcome-info {
         display: block;
-        align-items: left;
+        margin: 10px;
+        padding: 0;
+    }
+    .calendar-info {
+        display: block;
         margin: 10px;
         padding: 0;
     }
@@ -393,10 +398,10 @@ body {font-family: Verdana, sans-serif; margin:0}
         font-size: 18px;
     }
     .assignment-info h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .assignment-info ul {
-        font-size: 18px;
+        font-size: 15px;
     }
     #background {
         display: none;
@@ -405,7 +410,7 @@ body {font-family: Verdana, sans-serif; margin:0}
         margin-top: 25px;
         font-size: 18px;
     }
-    .school_img {
+    .school_img img {
         width: 65%;
         margin: 0 auto;
     }
@@ -430,5 +435,30 @@ body {font-family: Verdana, sans-serif; margin:0}
         width: auto;
         height: 350px;
    }
+   .links_page  {
+        display: block;
+        margin: 0;
+        padding: 0;
+   }
+   .links_page h2 {
+        font-size: 18px;
+    }
+    .links_page ul {
+        font-size: 18px;
+    }
+    .links-title h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .school-links, .district-links {
+        margin: 5px;
+        padding: 0;
+        font-size: 18px;
+   }
+   span img {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 75%;
+   }
 }
-          
