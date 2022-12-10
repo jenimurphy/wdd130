@@ -131,8 +131,11 @@ p {
     font-family: 'Karla', sans-serif;
     font-size: 24px;
 }
-.welcome {
-    text-align: start;
+.welcome-index p {
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .welcome p {
@@ -161,6 +164,7 @@ p {
     grid-row: 1/2;
     grid-column: 1/2;
 } 
+
 .assignment-faculty {
     grid-row: 2/3;
 }
@@ -206,10 +210,62 @@ iframe {
 .welcome-info img{
     margin-left: 95px; 
     vertical-align: top; 
-    padding: 10px;
+    padding: 20px;
     max-width: 256px;
     max-height: 256px;
 }
+/* -----------SUB-PAGE: CALENDARS----------- */
+.calendars-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 95px;
+    margin-right: 95px;
+    padding: 15px;
+    font-size: 20px;
+    row-gap: 25px;
+    column-gap: 75px;
+}
+.calendars-info {
+    display: flex;
+    margin-left: 95px;
+    margin-right: 95px;
+    vertical-align: middle;
+}
+.calendars-faculty h2{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+}
+.calendars-community h2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.calendars-conference h2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+}
+.calendars-gym h2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+.calendars-request{
+    display: block;
+    text-align: center;
+}
+.calendars-request iframe {
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 700px;
+}
+
 /* -----------SUB-PAGE: LINKS----------- */
 .links_page {
     margin-left: 95px;
@@ -229,7 +285,7 @@ iframe {
     text-align: center;
 }
 .links-title h1 {
-    text-align: left;
+    text-align: center;
 }
 
 /* -----------QUOTES SLIDESHOW----------- */
@@ -360,9 +416,11 @@ body {font-family: Verdana, sans-serif; margin:0}
         margin: 10px;
         padding: 0; 
     }
-    .welcome p {
+    .welcome-index p {
         display: block;
         font-size: 18px;
+        margin: 10px;
+        padding: 10px;
     }
     .welcome h1 {
         display: block;
@@ -375,18 +433,47 @@ body {font-family: Verdana, sans-serif; margin:0}
     .welcome-info {
         display: block;
         margin: 10px;
-        padding: 0;
+        padding: 0px;
     }
-    .calendar-info {
+    .assignment-info {
         display: block;
         margin: 10px;
-        padding: 0;
+    }
+    .calendars-grid {
+        display: block;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .calendars-info {
+        display: block;
+        margin: 10px;
+    }
+    .calendars-info p {
+        display: block;
+        margin: 10px;
+        font-size: 18px;
+    }
+    .calendars-info h1 {
+        font-size: 24px;
+    }
+    .calendars-info h2 {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+    .calendars iframe {
+        text-align: center;
+    }
+    .calendars-request p a {
+        margin-left: 10px;
+        font-size: 18px;
     }
     .welcome-info h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
     .welcome-info span {
         width: 75%;
+        text-align: center;
     }
     .welcome-info img{
         width: 50%;
@@ -432,8 +519,12 @@ body {font-family: Verdana, sans-serif; margin:0}
         height: 350px;
    }
     iframe {
+        display: block;
         width: auto;
         height: 350px;
+        /*margin-left: 20px;*/
+        margin: 0 auto;
+        
    }
    .links_page  {
         display: block;
@@ -458,7 +549,7 @@ body {font-family: Verdana, sans-serif; margin:0}
    span img {
         align-items: center;
         margin: 0;
-        padding: 0;
+        padding: 10px;
         width: 75%;
    }
 }
